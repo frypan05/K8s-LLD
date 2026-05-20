@@ -1,0 +1,5 @@
+- Every cluster has a master node and several worker nodes. The master node is responsible for managing the cluster, while the worker nodes are responsible for running the applications.
+- We talk to the master node, which then talks to the worker nodes. The master node is responsible for scheduling the applications.
+- The master node does not have
+- Control Plane has infinity for loops called controllers. These controllers are responsible for ensuring that the desired state of the cluster is maintained.  
+- For example, if a worker node goes down, the controller will automatically reschedule the applications that were running on that node to other nodes in the cluster.
